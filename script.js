@@ -6,8 +6,8 @@ CANVAS_HEIGHT = canvas.height = 1000;
 
 class Enemy {
     constuctor(){
-        this.x = 10;
-        this.y = 50;
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
         this.width = 100;
         this.height = 100;
     }
@@ -16,7 +16,7 @@ class Enemy {
         this.y++;
     }
     draw(){
-        ctx.fillRect(this.x, this.y, this.width, this.height)
+        ctx.fillRect(this.x, this.y, this.width, this.height);
     }
 }
 const enemy1 = new Enemy();
