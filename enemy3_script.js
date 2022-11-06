@@ -23,10 +23,10 @@ class Enemy {
         this.flapSpeed = Math.floor(Math.random() * 3 + 1);
         this.angle = Math.random() * 2;
         this.angleSpeed = Math.random() * 2;
-        this.curve = Math.random() * 5;
+        this.curve = Math.random() * 200;
     }
     update(){
-        this.x = 100 * Math.sin(this.angle * Math.PI/180) + canvas.width/2 - this.width;
+        this.x = this.curve * Math.sin(this.angle * Math.PI/180) + (canvas.width/2 - this.width/2);
         // this.y += this.curve * Math.sin(this.angle);
         this.angle += this.angleSpeed;
         if (this.x + this.width < 0){
