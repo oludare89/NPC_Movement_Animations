@@ -1,9 +1,29 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 #canvas1 {
     border: 3px solid black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 1000px;
-    width: 500px;
+    height: 900px;
+    width: 450px;
+}
+
+#canvas2 {
+    border: 3px solid black;
+    position: relative;
+    height: 900px;
+    width: 450px;
+}
+
+#canvas3 {
+    border: 3px solid black;
+    height: 900px;
+    width: 450px;
+}
+
+#canvas4 {
+    border: 3px solid black;
+    height: 900px;
+    width: 450px;
 }
